@@ -13,7 +13,7 @@ public class Worker {
     }
 
     public void execute(){
-        System.out.println(preamble + " " + text + "is dev: " + isDev);
+        System.out.println(preamble + " " + text + " is dev: " + isDev);
     }
 
 }

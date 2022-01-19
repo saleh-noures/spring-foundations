@@ -1,22 +1,23 @@
 package com.noures.common.config;
 
 import com.noures.common.data.repository.CustomerRepository;
-import com.noures.common.data.repository.InventoryItemRepository;
 import com.noures.common.data.repository.SalesOrderRepository;
 import com.noures.common.service.InventoryService;
 import com.noures.common.service.OrderService;
-import com.noures.common.service.impl.InventoryServiceImpl;
 import com.noures.common.service.impl.OrderServiceImpl;
 import com.noures.common.util.Worker;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.*;
 
+
+/* This class is an example of JavaConfig-Based Configuration */
+/* This is not a spring Boot App */
+
 /* @Configuration Will declare the class as a configuration class */
 @Configuration
 
-/* You can span your beans configuration over many configuration classes then usr @Import for importing */
+/* You can span your beans configuration over many configuration classes then use @Import for importing */
 @Import(DataConfig.class)
 
 /*
