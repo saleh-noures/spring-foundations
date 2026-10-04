@@ -9,7 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 @Service
 public class InventoryServiceImpl implements InventoryService {
+
     private final InventoryItemRepository inventoryItemRepository;
+
     /* @Autowired is optional here as the class contain one constructor only*/
     @Autowired
     public InventoryServiceImpl(InventoryItemRepository inventoryItemRepository){

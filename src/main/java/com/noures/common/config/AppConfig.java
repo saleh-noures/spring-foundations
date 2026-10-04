@@ -27,7 +27,7 @@ import org.springframework.context.annotation.*;
 */
 @PropertySource("classpath:/application-${spring.profiles.active}.properties")
 
-/* @ComponentScan will enable componant scanning */
+/* @ComponentScan will enable component scanning */
 @ComponentScan(basePackages = {"com.noures.common"})
 public class AppConfig {
 
