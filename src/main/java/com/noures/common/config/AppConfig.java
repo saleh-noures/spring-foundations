@@ -49,9 +49,10 @@ public class AppConfig {
         return new Worker(greetingPreamble, greetingText, isDev);
     }
 
-    /*Notice that inventoryServiceImpl was annotated with @Service, so no need to define it as a bean here*/
+    /*Note that inventoryServiceImpl was annotated with @Service, so no need to define it as a bean here
+    while customerRepository and salesOrderRepository are defined in the imported config file "DataConfig.class" */
 
-    /* The name of the bean will be the method name and the dependencies will listed as method parameters. */
+    /* The name of the bean will be the method name and the dependencies are listed as method parameters. */
     @Bean
     public OrderService orderService(InventoryService inventoryService, CustomerRepository customerRepository, SalesOrderRepository salesOrderRepository){
         return new OrderServiceImpl(inventoryService, customerRepository, salesOrderRepository);
